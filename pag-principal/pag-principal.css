@@ -151,6 +151,10 @@ main.cards > .card > span {
     font-family: Georgia, sans-serif;
 }
 
+#contatos {
+    display: grid;
+}
+
 #contatos > h1 {
     text-align: center;
     font-size: 3em;
@@ -158,6 +162,16 @@ main.cards > .card > span {
     margin-top: 100px;
     margin-bottom: 20px;
 }
+
+#contatos > ul {
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+
 
 
 
