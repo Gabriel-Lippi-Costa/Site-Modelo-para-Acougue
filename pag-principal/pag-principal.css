@@ -101,10 +101,60 @@ menu > ul > li > a:hover{
 #carnes div {
     margin: 0 auto;
     padding: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 4px black;
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     width: 70%;
+    color: gray;
+    text-align: center;
 }
+
+main.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cards */
+}
+
+main.cards > .card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Padrão: Um abaixo do outro */
+    max-width: 300px; /* Define um tamanho máximo para os cards */
+}
+
+main.cards > .card > h3 {
+    font-size: 1.4em;
+    margin: 5px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+main.cards > .card > span {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main.cards > .card {
+        width: calc(50% - 15px); /* 2 por linha */
+    }
+}
+
+/* Para notebooks e TVs (acima de 1024px) */
+@media (min-width: 1025px) {
+    main.cards {
+        max-width: 920px; /* Limita o tamanho total do contêiner */
+        margin: 0 auto; /* Centraliza os cards na tela */
+    }
+
+    main.cards > .card {
+        width: calc(33.33% - 15px); /* 3 por linha */
+    }
+}
+
