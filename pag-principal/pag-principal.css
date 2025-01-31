@@ -136,6 +136,21 @@ main.cards > .card > span {
     font-family: "Poppins", sans-serif;
 }
 
+#aperitivos {
+    display: grid;
+}
+
+#aperitivos p {
+    margin: 20px auto;
+    
+}
+
+#aperitivos h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, sans-serif;
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
