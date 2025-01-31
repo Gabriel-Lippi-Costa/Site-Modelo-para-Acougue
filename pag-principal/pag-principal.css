@@ -25,7 +25,7 @@ header img {
     padding: 10px;
 }
 
-#botao-menu{
+#botao-menu {
     margin-top: 15px;
     padding: 5px;
     font-size: 2em;
@@ -34,22 +34,30 @@ header img {
     display: block;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#botao-menu:hover{
+#botao-menu:hover {
     background-color: rgb(88, 88, 88);
-    color: white;
 }
 
-menu{
-    display: none;
+menu {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 
-menu > ul{
+menu.active {
+    opacity: 1;
+    max-height: 500px;
+}
+
+menu > ul {
     list-style-type: none;
 }
 
-menu > ul > li{
+menu > ul > li {
     display: block;
     padding: 10px;
     text-align: center;
@@ -66,7 +74,7 @@ menu > ul > li > a {
     color: #383B49;
 }
 
-menu > ul > li > a:hover{
+menu > ul > li > a:hover {
     color: red;
 }
 
@@ -94,21 +102,9 @@ menu > ul > li > a:hover{
 
 #carnes h1 {
     text-align: center;
+    font-size: 3em;
     font-family: Georgia, sans-serif;
     margin-bottom: 10px;
-}
-
-#carnes div {
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px black;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 70%;
-    color: gray;
-    text-align: center;
 }
 
 main.cards {
