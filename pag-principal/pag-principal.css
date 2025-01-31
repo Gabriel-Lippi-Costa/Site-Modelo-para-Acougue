@@ -140,6 +140,8 @@ main.cards > .card > span {
     font-family: "Poppins", sans-serif;
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     main.cards > .card {
         width: calc(50% - 15px); /* 2 por linha */
