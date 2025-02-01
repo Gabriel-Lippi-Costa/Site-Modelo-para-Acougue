@@ -90,7 +90,7 @@ menu > ul > li:hover {
 }
 
 #apresentacao:nth-of-type(1) {
-    background-image: url(img-apresentacao.jpg);
+    background-image: url(pag-principal/img-apresentacao.jpg);
     height: 500px;
 }
 
