@@ -88,6 +88,12 @@ menu > ul > li:hover {
     background-attachment: fixed;
 }
 
+@supports (-webkit-touch-callout: none) {
+    #apresentacao {
+        background-attachment: scroll; /* Ajuste exclusivo para iOS */
+    }
+}
+
 #carnes {
     display: grid;
 }
