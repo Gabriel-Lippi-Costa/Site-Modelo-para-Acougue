@@ -90,7 +90,9 @@ menu > ul > li:hover {
 
 @supports (-webkit-touch-callout: none) {
     #apresentacao {
-        background-attachment: scroll; /* Ajuste exclusivo para iOS */
+        background-position: top center;
+        background-size: cover;
+        background-attachment: scroll;
     }
 }
 
