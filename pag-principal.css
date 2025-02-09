@@ -16,7 +16,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header > nav > .parte-de-cima {
+header>nav>.parte-de-cima {
     display: flex;
 }
 
@@ -53,11 +53,11 @@ menu.active {
     max-height: 500px;
 }
 
-menu > ul {
+menu>ul {
     list-style-type: none;
 }
 
-menu > ul > li {
+menu>ul>li {
     display: block;
     padding: 10px;
     text-align: center;
@@ -70,12 +70,12 @@ menu > ul > li {
     transition: transform 0.3s ease-in-out;
 }
 
-menu > ul > li > a {
+menu>ul>li>a {
     text-decoration: none;
     color: #383B49;
 }
 
-menu > ul > li:hover {
+menu>ul>li:hover {
     color: red;
     transform: scale(1.1);
 }
@@ -115,27 +115,30 @@ main.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Espaçamento entre os cards */
+    gap: 15px;
+    /* Espaçamento entre os cards */
 }
 
-main.cards > .card {
+main.cards>.card {
     border: 1px solid black;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 4px black;
     flex-direction: column;
     text-align: center;
-    width: 100%; /* Padrão: Um abaixo do outro */
-    max-width: 300px; /* Define um tamanho máximo para os cards */
+    width: 100%;
+    /* Padrão: Um abaixo do outro */
+    max-width: 300px;
+    /* Define um tamanho máximo para os cards */
 }
 
-main.cards > .card > h3 {
+main.cards>.card>h3 {
     font-size: 1.4em;
     margin: 5px 0px;
     font-family: "Poppins", sans-serif;
 }
 
-main.cards > .card > span {
+main.cards>.card>span {
     font-size: 1.2em;
     font-family: "Poppins", sans-serif;
 }
@@ -147,7 +150,7 @@ main.cards > .card > span {
 
 #aperitivos p {
     margin: 20px auto;
-    
+
 }
 
 #aperitivos h1 {
@@ -168,15 +171,16 @@ main.cards > .card > span {
     line-height: 1.8em;
 }
 
-#contatos > h1 {
+#contatos>h1 {
     text-align: center;
     font-size: 3em;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #d9534f; /* Cor do título */
+    color: #d9534f;
+    /* Cor do título */
 }
 
-#contatos > ul {
+#contatos>ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -184,11 +188,11 @@ main.cards > .card > span {
     gap: 20px;
 }
 
-#contatos > ul > a {
+#contatos>ul>a {
     text-decoration: none;
 }
 
-#contatos > ul > a > li {
+#contatos>ul>a>li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,14 +204,17 @@ main.cards > .card > span {
     transition: transform 0.3s, background-color 0.3s;
 }
 
-#contatos > ul > a > li:hover {
-    transform: scale(1.1); /* Aumenta ao passar o mouse */
-    background-color: #eee; /* Cor de destaque */
+#contatos>ul>a>li:hover {
+    transform: scale(1.1);
+    /* Aumenta ao passar o mouse */
+    background-color: #eee;
+    /* Cor de destaque */
 }
 
-#contatos > ul > a > li > .icone {
+#contatos>ul>a>li>.icone {
     font-size: 2em;
-    color: inherit; /* Herdar a cor do <li> */
+    color: inherit;
+    /* Herdar a cor do <li> */
 }
 
 #sobre-nos {
@@ -221,7 +228,7 @@ main.cards > .card > span {
     font-family: Arial, sans-serif;
 }
 
-#sobre-nos > h1 {
+#sobre-nos>h1 {
     text-align: center;
     font-size: 3em;
     font-family: Georgia, serif;
@@ -231,7 +238,7 @@ main.cards > .card > span {
     text-shadow: 2px 2px #f0f0f0;
 }
 
-#sobre-nos > p {
+#sobre-nos>p {
     font-size: 1.2em;
     line-height: 1.8em;
     text-align: justify;
@@ -256,15 +263,17 @@ main.cards > .card > span {
     line-height: 1.8em;
 }
 
-#loc > h1 {
+#loc>h1 {
     text-align: center;
     font-size: 3em;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #d9534f; /* Mesma cor do título em Sobre Nós */
+    color: #d9534f;
+    /* Mesma cor do título em Sobre Nós */
 }
 
-#loc > p, #loc > address {
+#loc>p,
+#loc>address {
     text-align: center;
     font-size: 1.2em;
     color: #333;
@@ -291,22 +300,23 @@ main.cards > .card > span {
     line-height: 1.8em;
 }
 
-#horario > h1 {
+#horario>h1 {
     text-align: center;
     font-size: 2em;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #d9534f; /* Mesma cor do título em Sobre Nós */
+    color: #d9534f;
+    /* Mesma cor do título em Sobre Nós */
 }
 
-#horario > p {
+#horario>p {
     text-align: center;
     font-size: 1.2em;
     color: #333;
     margin-bottom: 15px;
 }
 
-#horario > ul {
+#horario>ul {
     list-style: none;
     padding: 0;
     font-size: 1.2em;
@@ -314,38 +324,46 @@ main.cards > .card > span {
     text-align: center;
 }
 
-#horario > ul > li {
+#horario>ul>li {
     margin: 10px 0;
 }
 
-#horario > ul > li strong {
-    color: #d9534f; /* Destaque para os dias */
+#horario>ul>li strong {
+    color: #d9534f;
+    /* Destaque para os dias */
 }
 
 #footer {
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Texto branco */
+    background-color: #000;
+    /* Fundo preto */
+    color: #fff;
+    /* Texto branco */
     padding: 20px 0;
     text-align: center;
-    border-top: 5px solid #d9534f; /* Barra superior vermelha */
-    width: 100%; /* Ocupa toda a largura da tela */
+    border-top: 5px solid #d9534f;
+    /* Barra superior vermelha */
+    width: 100%;
+    /* Ocupa toda a largura da tela */
     position: relative;
     bottom: 0;
     margin-top: 100px;
 }
 
 .footer-container {
-    max-width: 1200px; /* Limita o conteúdo no centro */
+    max-width: 1200px;
+    /* Limita o conteúdo no centro */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0 15px; /* Espaçamento lateral para telas menores */
+    padding: 0 15px;
+    /* Espaçamento lateral para telas menores */
 }
 
 .footer-logo {
-    width: 120px; /* Tamanho da logo */
+    width: 120px;
+    /* Tamanho da logo */
     height: auto;
     margin-bottom: 10px;
 }
@@ -355,8 +373,10 @@ main.cards > .card > span {
     padding: 0;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Permite quebrar para a próxima linha em telas pequenas */
-    justify-content: center; /* Centraliza o menu */
+    flex-wrap: wrap;
+    /* Permite quebrar para a próxima linha em telas pequenas */
+    justify-content: center;
+    /* Centraliza o menu */
 }
 
 .footer-menu li {
@@ -364,7 +384,8 @@ main.cards > .card > span {
 }
 
 .footer-menu a {
-    color: #fff; /* Texto branco */
+    color: #fff;
+    /* Texto branco */
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -372,47 +393,55 @@ main.cards > .card > span {
 }
 
 .footer-menu a:hover {
-    color: #d9534f; /* Texto vermelho ao passar o mouse */
+    color: #d9534f;
+    /* Texto vermelho ao passar o mouse */
 }
 
 #footer p {
     font-size: 0.9em;
-    color: #ccc; /* Texto cinza claro */
+    color: #ccc;
+    /* Texto cinza claro */
     margin-top: 10px;
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .footer-logo {
-        width: 100px; /* Reduz o tamanho da logo */
+        width: 100px;
+        /* Reduz o tamanho da logo */
     }
 
     .footer-menu {
-        gap: 15px; /* Menor espaço entre itens */
+        gap: 15px;
+        /* Menor espaço entre itens */
     }
 
     .footer-menu a {
-        font-size: 0.9em; /* Texto um pouco menor */
+        font-size: 0.9em;
+        /* Texto um pouco menor */
     }
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    main.cards > .card {
-        width: calc(50% - 15px); /* 2 por linha */
+    main.cards>.card {
+        width: calc(50% - 15px);
+        /* 2 por linha */
     }
 }
 
 /* Para notebooks e TVs (acima de 1024px) */
 @media (min-width: 1025px) {
     main.cards {
-        max-width: 920px; /* Limita o tamanho total do contêiner */
-        margin: 0 auto; /* Centraliza os cards na tela */
+        max-width: 920px;
+        /* Limita o tamanho total do contêiner */
+        margin: 0 auto;
+        /* Centraliza os cards na tela */
     }
 
-    main.cards > .card {
-        width: calc(33.33% - 15px); /* 3 por linha */
+    main.cards>.card {
+        width: calc(33.33% - 15px);
+        /* 3 por linha */
     }
 }
-
